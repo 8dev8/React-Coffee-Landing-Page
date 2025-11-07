@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #f9f6f1;
+    font-family: 'Montserrat', sans-serif;
+    color: #3b2e2a;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: rgba(60, 42, 35, 0.95);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: #d3a573;
+}
+
+.hero {
+    position: relative;
+    height: 85vh;
+    background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.hero button {
+    margin-top: 15px;
+    background: #d3a573;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    color: #3b2e2a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero button:hover {
+    background: #b98a5a;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.about-text {
+    flex: 1;
+}
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+
+.menu {
+    text-align: center;
+    padding: 80px 20px;
+}
+.menu h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+.menu-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.menu-card:hover {
+    transform: translateY(-6px);
+}
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.menu-card h3 {
+    margin: 15px 0 5px;
+    font-family: 'Playfair Display', serif;
+}
+.menu-card p {
+    font-size: 0.95rem;
+    padding: 0 15px;
+    color: #56443d;
+}
+.menu-card span {
+    display: block;
+    margin: 12px 0 18px;
+    font-weight: 600;
+    color: #b2744c;
+}
+
+
+.reviews {
+    background: #ede3d6;
+    text-align: center;
+    padding: 80px 20px;
+}
+.reviews h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+.review-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.review-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    font-style: italic;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.review-card span {
+    display: block;
+    margin-top: 10px;
+    color: #b2744c;
+    font-weight: 600;
+}
+
+
+footer {
+    background: linear-gradient(180deg, #3b2e2a, #2a1f1b);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
+
+footer p svg {
+    margin-right: 8px;
+    color: #d3a573;
+    vertical-align: middle;
+}
