@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Coffee-Landing-Page/static/css/main.317821cf.css",
+    "main.js": "/React-Coffee-Landing-Page/static/js/main.6eea3c36.js",
+    "index.html": "/React-Coffee-Landing-Page/index.html",
+    "main.317821cf.css.map": "/React-Coffee-Landing-Page/static/css/main.317821cf.css.map",
+    "main.6eea3c36.js.map": "/React-Coffee-Landing-Page/static/js/main.6eea3c36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.317821cf.css",
+    "static/js/main.6eea3c36.js"
+  ]
+}
